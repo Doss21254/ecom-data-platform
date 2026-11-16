@@ -1,0 +1,398 @@
+[
+  {
+    "name": "女装",
+    "children": [
+      {
+        "name": "裙装",
+        "value": 9814,
+        "children": [
+          {
+            "name": "连衣裙",
+            "value": 5401,
+            "children": []
+          },
+          {
+            "name": "半身裙",
+            "value": 11061,
+            "children": []
+          },
+          {
+            "name": "背带裙",
+            "value": 3352,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "女士上衣",
+        "value": 3683,
+        "children": [
+          {
+            "name": "T恤",
+            "value": 9778,
+            "children": []
+          },
+          {
+            "name": "衬衫",
+            "value": 14245,
+            "children": []
+          },
+          {
+            "name": "针织衫",
+            "value": 12260,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "裤子",
+        "value": 33002,
+        "children": [
+          {
+            "name": "牛仔裤",
+            "value": 12365,
+            "children": []
+          },
+          {
+            "name": "休闲裤",
+            "value": 8220,
+            "children": []
+          },
+          {
+            "name": "西装裤",
+            "value": 12417,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "内衣",
+        "value": 23674,
+        "children": [
+          {
+            "name": "文胸",
+            "value": 11333,
+            "children": []
+          },
+          {
+            "name": "内裤",
+            "value": 6613,
+            "children": []
+          },
+          {
+            "name": "家居服",
+            "value": 5728,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "袜子",
+        "value": 18978,
+        "children": [
+          {
+            "name": "短袜",
+            "value": 3449,
+            "children": []
+          },
+          {
+            "name": "长筒袜",
+            "value": 9669,
+            "children": []
+          },
+          {
+            "name": "连裤袜",
+            "value": 5860,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "配饰",
+        "value": 23819,
+        "children": [
+          {
+            "name": "帽子",
+            "value": 4246,
+            "children": []
+          },
+          {
+            "name": "围巾",
+            "value": 13701,
+            "children": []
+          },
+          {
+            "name": "腰带",
+            "value": 5872,
+            "children": []
+          }
+        ]
+      }
+    ],
+    "value": 155570
+  },
+  {
+    "name": "手机数码",
+    "children": [
+      {
+        "name": "手机",
+        "value": 5739,
+        "children": [
+          {
+            "name": "安卓手机",
+            "value": 9209,
+            "children": []
+          },
+          {
+            "name": "苹果手机",
+            "value": 9435,
+            "children": []
+          },
+          {
+            "name": "备用功能机",
+            "value": 7095,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "平板",
+        "value": 18302,
+        "children": [
+          {
+            "name": "iPad",
+            "value": 9236,
+            "children": []
+          },
+          {
+            "name": "安卓平板",
+            "value": 2801,
+            "children": []
+          },
+          {
+            "name": "手写平板",
+            "value": 6265,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "笔记本电脑",
+        "value": 30026,
+        "children": [
+          {
+            "name": "游戏本",
+            "value": 11968,
+            "children": []
+          },
+          {
+            "name": "轻薄本",
+            "value": 10222,
+            "children": []
+          },
+          {
+            "name": "二合一笔记本",
+            "value": 7836,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "耳机",
+        "value": 33336,
+        "children": [
+          {
+            "name": "蓝牙耳机",
+            "value": 12459,
+            "children": []
+          },
+          {
+            "name": "有线耳机",
+            "value": 7065,
+            "children": []
+          },
+          {
+            "name": "头戴耳机",
+            "value": 13812,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "智能手表",
+        "value": 19949,
+        "children": [
+          {
+            "name": "智能手环",
+            "value": 12439,
+            "children": []
+          },
+          {
+            "name": "运动手表",
+            "value": 4150,
+            "children": []
+          },
+          {
+            "name": "儿童手表",
+            "value": 3360,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "充电器配件",
+        "value": 308,
+        "children": [
+          {
+            "name": "充电头",
+            "value": 9752,
+            "children": []
+          },
+          {
+            "name": "数据线",
+            "value": 11716,
+            "children": []
+          },
+          {
+            "name": "充电宝",
+            "value": 8640,
+            "children": []
+          }
+        ]
+      }
+    ],
+    "value": 157460
+  },
+  {
+    "name": "美妆护肤",
+    "children": [
+      {
+        "name": "面部护肤",
+        "value": 16261,
+        "children": [
+          {
+            "name": "水乳套装",
+            "value": 9372,
+            "children": []
+          },
+          {
+            "name": "精华",
+            "value": 3870,
+            "children": []
+          },
+          {
+            "name": "面霜",
+            "value": 3019,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "彩妆",
+        "value": 11873,
+        "children": [
+          {
+            "name": "粉底",
+            "value": 3159,
+            "children": []
+          },
+          {
+            "name": "眼影",
+            "value": 3880,
+            "children": []
+          },
+          {
+            "name": "口红",
+            "value": 4834,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "香水",
+        "value": 15918,
+        "children": [
+          {
+            "name": "淡香水",
+            "value": 12649,
+            "children": []
+          },
+          {
+            "name": "浓香",
+            "value": 1585,
+            "children": []
+          },
+          {
+            "name": "香体喷雾",
+            "value": 1684,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "面膜",
+        "value": 15256,
+        "children": [
+          {
+            "name": "补水面膜",
+            "value": 5522,
+            "children": []
+          },
+          {
+            "name": "清洁面膜",
+            "value": 8398,
+            "children": []
+          },
+          {
+            "name": "美白面膜",
+            "value": 1336,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "防晒",
+        "value": 17592,
+        "children": [
+          {
+            "name": "防晒霜",
+            "value": 1839,
+            "children": []
+          },
+          {
+            "name": "防晒喷雾",
+            "value": 3532,
+            "children": []
+          },
+          {
+            "name": "防晒隔离",
+            "value": 12221,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "卸妆",
+        "value": 30870,
+        "children": [
+          {
+            "name": "卸妆水",
+            "value": 12831,
+            "children": []
+          },
+          {
+            "name": "卸妆油",
+            "value": 6848,
+            "children": []
+          },
+          {
+            "name": "卸妆膏",
+            "value": 11191,
+            "children": []
+          }
+        ]
+      }
+    ],
+    "value": 107770
+  }
+]

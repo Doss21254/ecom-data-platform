@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="connect-btn">点击连接</button>
+  <button id="receive-btn" disabled>接收</button>
+  <p id="status">未连接；请在每个要同步的浏览器页面分别点击“点击连接”。</p>
+  <pre id="message"></pre>
+  <script>
+    const connectBtn = document.getElementById('connect-btn')
+    const receiveBtn = document.getElementById('receive-btn')
+    const message = document.getElementById('message')
+    const status = document.getElementById('status')
+    let ws = null
+
+    connectBtn.addEventListener('click', () => {
+      if (ws && (ws.readyState === WebSocket.CONNECTING || ws.readyState === WebSocket.OPEN)) {
+        return
+      }
+
+      status.innerText = '正在连接 WebSocket 服务...'
+      ws = new WebSocket('ws://localhost:8888')
+      ws.onopen = () => {
+        console.log('连接成功')
+        status.innerText = '已连接。其他需要同步的浏览器也必须分别连接。'
+        connectBtn.disabled = true
+        receiveBtn.disabled = false
+      }
+      ws.onclose = () => {
+        console.log('连接已关闭')
+        status.innerText = '连接已关闭，请重新连接。'
+        connectBtn.disabled = false
+        receiveBtn.disabled = true
+        ws = null
+      }
+      ws.onerror = (error) => {
+        console.error('WebSocket 连接发生错误：', error)
+        status.innerText = '连接失败，请确认后端服务正在运行。'
+      }
+      ws.onmessage = (event) => {
+        console.log('接收到了后端发送的数据')
+        console.log(event.data)
+        message.innerText = event.data
+      }
+    })
+
+    receiveBtn.addEventListener('click', () => {
+      if (!ws || ws.readyState !== WebSocket.OPEN) {
+        console.warn('WebSocket 尚未连接，无法发送消息')
+        return
+      }
+      ws.send(JSON.stringify({
+        action: 'themeChange',
+        socketType: 'themeChange',
+        chartName: '',
+        value: 'chalk'
+      }))
+    })
+
+  </script>
+</body>
+
+</html>

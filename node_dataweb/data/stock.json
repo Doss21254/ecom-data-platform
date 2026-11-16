@@ -1,0 +1,52 @@
+[
+  {
+    "name": "IPhone 11",
+    "stock": 6310,
+    "sales": 2103
+  },
+  {
+    "name": "IPhone 12",
+    "stock": 142,
+    "sales": 1356
+  },
+  {
+    "name": "IPhone 13",
+    "stock": 2751,
+    "sales": 2488
+  },
+  {
+    "name": "IPhone 14",
+    "stock": 1185,
+    "sales": 9271
+  },
+  {
+    "name": "IPhone 15",
+    "stock": 3124,
+    "sales": 2861
+  },
+  {
+    "name": "华为Mate60",
+    "stock": 277,
+    "sales": 1892
+  },
+  {
+    "name": "华为Pura70",
+    "stock": 833,
+    "sales": 1269
+  },
+  {
+    "name": "小米14",
+    "stock": 2668,
+    "sales": 2375
+  },
+  {
+    "name": "OPPO Find X7",
+    "stock": 11396,
+    "sales": 1042
+  },
+  {
+    "name": "vivo X100",
+    "stock": 1845,
+    "sales": 1517
+  }
+]
