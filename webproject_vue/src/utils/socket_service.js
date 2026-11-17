@@ -19,7 +19,11 @@ export default class SocketService {
     if (!window.WebSocket) {
       return console.error('当前浏览器不支持 WebSocket。');
     }
-    this.ws = new WebSocket('ws://localhost:8888');
+    // 开发环境直连本地 ws 服务；生产环境走同源 /ws 路径（由 Nginx 反向代理到 8888）
+    const wsUrl = process.env.NODE_ENV === 'development'
+      ? 'ws://localhost:8888'
+      : ('ws://' + window.location.host + '/ws');
+    this.ws = new WebSocket(wsUrl);
     this.ws.onopen = () => {
       console.log('WebSocket 连接成功');
       this.connected = true
