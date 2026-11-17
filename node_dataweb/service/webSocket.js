@@ -1,6 +1,7 @@
 const path = require('path')
-const fileutils = require('../utils/file_utils')
+// const fileutils = require('../utils/file_utils')
 const WebSocket = require('ws')
+const dataService = require('./data_service')   // 文件顶部引入
 const panelIds = new Set(['trend', 'map', 'hot', 'seller', 'rank', 'stock'])
 let fullscreenState = {
   action: 'fullScreen',
@@ -56,9 +57,10 @@ module.exports.listen = () => {
 
       if (payload.action === 'getData') {
         try {
-          let filePath = '../data/' + payload.chartName + '.json'
-          filePath = path.join(__dirname, filePath)
-          payload.data = await fileutils.getFileJsondata(filePath)
+          // let filePath = '../data/' + payload.chartName + '.json'
+          // filePath = path.join(__dirname, filePath)
+          // payload.data = await fileutils.getFileJsondata(filePath)
+          payload.data = await dataService.getChartData(payload.chartName)
           if (client.readyState === WebSocket.OPEN) {
             client.send(JSON.stringify(payload))
           }
